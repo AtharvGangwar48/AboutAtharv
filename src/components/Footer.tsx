@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex flex-col items-center space-y-4">
           <div className="flex space-x-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/AtharvGangwar48"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-indigo-600 transition-colors"
@@ -15,7 +15,7 @@ function Footer() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/atharvgangwar/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-indigo-600 transition-colors"
@@ -23,14 +23,20 @@ function Footer() {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:atharvgangwar8@gmail.com"
               className="text-gray-600 hover:text-indigo-600 transition-colors"
             >
               <Mail size={24} />
             </a>
+            <a
+              href="https://www.instagram.com/neonnirvana.9_11/"
+              className="text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              <Instagram size={24} />
+            </a>
           </div>
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Atharv Gangwar. All rights reserved.
           </p>
         </div>
       </div>
