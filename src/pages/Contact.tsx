@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MessagesSquare, MapPin, Send } from 'lucide-react';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -9,10 +9,28 @@ function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+
+    // Create a FormData object to send data in the correct format
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("message", formData.message);
+
+    fetch("https://formsubmit.co/atharvgangwar8@gmail.com", {
+      method: "POST",
+      body: form,
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" }); // Reset form
+        } else {
+          alert("Failed to send message. Please try again.");
+        }
+      })
+      .catch((error) => console.error("Error:", error));
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -49,21 +67,36 @@ function Contact() {
               <Mail className="text-indigo-600 mr-4" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-900">Email</h3>
-                <p className="text-gray-600">your.email@example.com</p>
+                <p className="text-gray-600">atharvgangwar8@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center">
-              <Phone className="text-indigo-600 mr-4" size={24} />
+              <MessagesSquare className="text-indigo-600 mr-4" size={24} />
               <div>
-                <h3 className="font-semibold text-gray-900">Phone</h3>
-                <p className="text-gray-600">+1 (123) 456-7890</p>
+                <h3 className="font-semibold text-gray-900">Direct Message</h3>
+                <p className="text-green-600">
+                  <span 
+                    onClick={() => window.open("https://wa.me/919058017153", "_blank")}
+                    className="cursor-pointer"
+                  >
+                    WhatsApp
+                  </span>
+                </p>
+                <p className="text-sky-600">
+                  <span 
+                    onClick={() => window.open("https://t.me/Atharv48", "_blank")}
+                    className="cursor-pointer"
+                  >
+                    Telegram
+                  </span>
+                </p>
               </div>
             </div>
             <div className="flex items-center">
               <MapPin className="text-indigo-600 mr-4" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-900">Location</h3>
-                <p className="text-gray-600">City, Country</p>
+                <p className="text-gray-600">Dehradun, India</p>
               </div>
             </div>
           </div>
@@ -77,6 +110,10 @@ function Contact() {
         >
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Required hidden input for FormSubmit */}
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Name
