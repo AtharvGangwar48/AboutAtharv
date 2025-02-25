@@ -1,44 +1,32 @@
-import { motion } from 'framer-motion';
-import {  Download,  GraduationCap } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Download, GraduationCap } from "lucide-react";
 
 function Home() {
+  const [submitted, setSubmitted] = useState(false);
+
   const personalInfo = {
-    name: "Atharv Gangwar",
-    title: "Full Stack Developer | AI & ML Enthusiast",
-    about: "B.Tech student specializing in AI & ML with a strong foundation in web development and programming. Passionate about building scalable applications and full-stack development.",
     education: [
       {
         degree: "B.Tech in Computer Science (AI & ML)",
         institution: "Graphic Era Hill University, Dehradun",
         year: "Expected: July 2027",
-        description: "Specializing in Artificial Intelligence and Machine Learning with a focus on web technologies."
+        description: "Specializing in AI & ML with a focus on full-stack development.",
       },
       {
         degree: "Class XII (CBSE)",
         institution: "J.P.M. Public School, Bareilly",
         year: "2023",
-        description: "Completed higher secondary education with a focus on science and mathematics."
+        description: "Completed higher secondary education with a focus on science and mathematics.",
       },
       {
         degree: "Class X (CBSE)",
         institution: "Delhi Public School, Bareilly",
         year: "2021",
-        description: "Completed secondary education with distinction."
-      }
-    ]
+        description: "Completed secondary education with distinction.",
+      },
+    ],
   };
-
-  const handleDownloadResume = () => {
-    const resumeUrl = '/AtharvGangwarResume.pdf'; // Ensure the file is in the public directory
-    const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'AtharvGangwarResume.pdf'; // Force download
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-  
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -49,20 +37,14 @@ function Home() {
         className="text-center mb-12"
       >
         <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
-          Hi, I'm <span className="text-indigo-600">{personalInfo.name}</span>
+          Hi, I'm <span className="text-indigo-600">Atharv Gangwar</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          {personalInfo.about}
+        B.Tech student specializing in AI & ML with a strong foundation in web development and programming. Passionate about building scalable applications and full-stack development.
         </p>
-        <button
-          onClick={handleDownloadResume}
-          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 mb-12"
-        >
-          Download Resume
-          <Download size={20} className="ml-2" />
-        </button>
       </motion.div>
 
+      {/* Gallery Section */}
       <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -72,11 +54,15 @@ function Home() {
         </div>
       </motion.div>
 
+      {/* Bio Section */}
       <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16 text-center">
         <h2 className="text-2xl font-bold text-gray-900">Bio</h2>
-        <p className="text-lg text-gray-700 mb-6">I am originally from Bareilly, have lived in Kota, and am currently based in Dehradun while pursuing a B.Tech in Computer Science. I have a strong passion for learning emerging technologies, with hands-on experience in JavaScript development and MongoDB. Through multiple projects, I have honed my skills in full-stack development and scalable application design.</p>
+        <p className="text-lg text-gray-700">
+          I am originally from Bareilly, have lived in Kota, and am currently based in Dehradun while pursuing a B.Tech in Computer Science. Passionate about learning emerging technologies with hands-on experience in full-stack development.
+        </p>
       </motion.div>
 
+      {/* Education Section */}
       <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16">
         <div className="flex items-center mb-6">
           <GraduationCap size={24} className="text-indigo-600 mr-3" />
@@ -92,24 +78,63 @@ function Home() {
         ))}
       </motion.div>
 
+      {/* Resume Request Form */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="text-center flex flex-wrap justify-center gap-4"
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="bg-white p-6 rounded-lg shadow-lg text-center max-w-lg mx-auto"
       >
-        <Link to="/skills" className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-          See Tech Skills
-        </Link>
-        <Link to="/projects" className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-          See Projects
-        </Link>
-        <Link
-          to="/contact"
-          className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-        >
-          Get in Touch
-        </Link>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Download My Resume</h2>
+        <p className="text-gray-600 mb-4">Enter your details to receive the resume.</p>
+
+        {!submitted ? (
+          <form
+            action="https://formsubmit.co/atharvgangwar8@gmail.com"
+            method="POST"
+            className="space-y-4"
+            onSubmit={() => setSubmitted(true)}
+          >
+            {/* Hidden Inputs for FormSubmit */}
+            <input type="hidden" name="_subject" value="New Resume Download Request" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Enter your name"
+              className="border border-gray-300 rounded-md p-3 w-full"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+              className="border border-gray-300 rounded-md p-3 w-full"
+            />
+            <button
+              type="submit"
+              className="px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md font-medium w-full"
+            >
+              Request Resume <Download size={20} className="ml-2 inline" />
+            </button>
+          </form>
+        ) : (
+          <div>
+            <p className="text-green-600 font-semibold mb-4">
+              ✅ Thank you! Your details have been submitted.
+            </p>
+            <a
+              href="/AtharvGangwarResume.pdf"
+              download
+              className="px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-md font-medium inline-flex items-center"
+            >
+              Download Resume <Download size={20} className="ml-2 inline" />
+            </a>
+          </div>
+        )}
       </motion.div>
     </div>
   );
