@@ -3,23 +3,29 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'A brief description of project 1 and its key features.',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/yourusername/project1',
-    demo: 'https://project1-demo.com',
-    demoEmbed: 'https://project1-demo.com' // Add the embed URL for live demo
+    title: 'BookIT-by-atharv',
+    description: 'This project is a custom-built Airbnb clone, developed to showcase my web development skills. The backend is powered by MongoDB, Express, and Node.js, with version control managed through Git and GitHub. I deployed the application on Render, ensuring all APIs follow RESTful principles and support full CRUD functionality. The project is structured using the MVC (Model-View-Controller) design pattern for organized and maintainable code.',
+    image: 'https://images.pexels.com/photos/5077042/pexels-photo-5077042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['JavaScript', 'NodeJS', 'EJS', 'MongoDB', 'Express'],
+    github: 'https://github.com/AtharvGangwar48/BookIT-by-Atharv',
+    demo: 'https://bookit-by-atharv.onrender.com/listings',
   },
   {
-    title: 'Project 2',
-    description: 'A brief description of project 2 and its key features.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
-    technologies: ['Node.js', 'Express', 'MongoDB'],
-    github: 'https://github.com/yourusername/project2',
-    demo: 'https://project2-demo.com',
-    demoEmbed: 'https://project2-demo.com' // Add the embed URL for live demo
+    title: 'RICO TRADE : A clone application of Zerodha & Kite',
+    description: 'RicoTrade is a feature-rich trading platform inspired by Zerodha, replicating Kite for a hands-on experience in trading functionalities. Built with React and Vite.js, the project uses Material UI, Bootstrap, and FontAwesome for UI, and Chart.js for dynamic charts. Note: It’s not responsive, so use a large screen. Hosted on Render with GitHub for version control, this project gave me valuable experience in full-stack deployment, UI/UX design, and real-world development workflows.',
+    image: 'https://images.pexels.com/photos/5833756/pexels-photo-5833756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['React', 'Tailwind CSS', 'JavaScript', 'Node', 'Vite', 'MongoDB', 'Material UI', 'Chart.js'],
+    github: 'https://github.com/AtharvGangwar48/RicoTrade-Frontend',
+    demo: 'https://ricotrade.onrender.com/',
   },
+  {
+    title: 'SUART : Question-Answering System works NLP and TF-IDF Similarity',
+    description: 'This project develops a Flask-based question-answering system using Natural Language Processing (NLP) to generate intelligent responses. By applying techniques like tokenization, lemmatization, and vectorization, the system processes user queries and compares them with a preloaded text corpus. It uses TF-IDF and cosine similarity to identify relevant answers, providing accurate, context-aware responses. The system is designed for practical use in automated customer service, knowledge management, and education, showcasing how Flask and NLP can be combined for real-world problem-solving.',
+    image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['Python', 'Natural Language Tool Kit (NLTK)', 'HTML', 'CSS'],
+    github: 'https://github.com/AtharvGangwar48/Suart-Basic',
+    demo: 'https://github.com/AtharvGangwar48/Suart-Basic/blob/main/ReasearchPaper.pdf',
+  }
 ];
 
 function Projects() {
@@ -33,7 +39,7 @@ function Projects() {
       >
         <h1 className="text-4xl font-bold text-gray-900 mb-4">My Projects</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Here are some of the projects I've worked on. Each project showcases different skills and technologies.
+          Here are some of the personal projects I've worked on. Each project showcases my skills and technologies.
         </p>
       </motion.div>
 
@@ -49,7 +55,7 @@ function Projects() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">{project.title}</h2>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-500 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <span
@@ -85,13 +91,11 @@ function Projects() {
               </div>
               <div className="p-6">
                 <div className="relative w-full h-0" style={{ paddingBottom: '56.25%' }}>
-                  <iframe
-                    src={project.demoEmbed}
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title={`Demo of ${project.title}`}
-                  ></iframe>
+                  <img
+                    src={project.image}
+                    alt={`${project.title} Image`}
+                    className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                  />
                 </div>
               </div>
             </div>
