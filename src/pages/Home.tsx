@@ -72,6 +72,10 @@ function Home() {
         </div>
       </motion.div>
 
+      <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16 text-center">
+        <h2 className="text-2xl font-bold text-gray-900">Bio</h2>
+        <p className="text-lg text-gray-700 mb-6">I am originally from Bareilly, have lived in Kota, and am currently based in Dehradun while pursuing a B.Tech in Computer Science. I have a strong passion for learning emerging technologies, with hands-on experience in JavaScript development and MongoDB. Through multiple projects, I have honed my skills in full-stack development and scalable application design.</p>
+      </motion.div>
 
       <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16">
         <div className="flex items-center mb-6">
@@ -86,11 +90,6 @@ function Home() {
             <p className="text-gray-600 mt-2">{edu.description}</p>
           </div>
         ))}
-      </motion.div>
-
-      <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16 text-center">
-        <h2 className="text-2xl font-bold text-gray-900">Bio</h2>
-        <p className="text-lg text-gray-700 mb-6">I am originally from Bareilly, have lived in Kota, and am currently based in Dehradun while pursuing a B.Tech in Computer Science. I have a strong passion for learning emerging technologies, with hands-on experience in JavaScript development and MongoDB. Through multiple projects, I have honed my skills in full-stack development and scalable application design.</p>
       </motion.div>
 
       <motion.div
