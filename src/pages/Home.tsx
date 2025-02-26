@@ -48,8 +48,8 @@ function Home() {
       <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <img src="/images/pic1.jpeg" alt="Project Image 1" className="w-full h-64 object-cover rounded-lg" />
-          <img src="/images/pic2.jpeg" alt="Project Image 2" className="w-full h-64 object-cover rounded-lg" />
+          <img src="/images/pic2.jpeg" alt="Project Image 1" className="w-full h-64 object-cover rounded-lg" />
+          <img src="/images/pic1.jpeg" alt="Project Image 2" className="w-full h-64 object-cover rounded-lg" />
           <img src="/images/pic3.jpeg" alt="Project Image 3" className="w-full h-64 object-cover rounded-lg" />
         </div>
       </motion.div>
