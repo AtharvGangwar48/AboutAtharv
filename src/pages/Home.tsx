@@ -58,7 +58,7 @@ function Home() {
       <motion.div className="bg-white rounded-lg shadow-lg p-8 mb-16 text-center">
         <h2 className="text-2xl font-bold text-gray-900">Bio</h2>
         <p className="text-lg text-gray-700">
-          I am originally from Bareilly, have lived in Kota, and am currently based in Dehradun while pursuing a B.Tech in Computer Science. Passionate about learning emerging technologies with hands-on experience in full-stack development.
+          I am deeply committed to continuous learning and self-improvement, constantly seeking to expand my expertise in emerging technologies and new skills. I thrive on applying this knowledge to tackle real-world challenges, with a strong focus on innovation and problem-solving. My goal is to make a meaningful impact by leveraging my abilities to contribute to practical solutions in diverse fields.
         </p>
       </motion.div>
 
