@@ -22,7 +22,7 @@ const projects = [
     title: 'SUART : Question-Answering System works NLP and TF-IDF Similarity',
     description: 'This project develops a Flask-based question-answering system using Natural Language Processing (NLP) to generate intelligent responses. By applying techniques like tokenization, lemmatization, and vectorization, the system processes user queries and compares them with a preloaded text corpus. It uses TF-IDF and cosine similarity to identify relevant answers, providing accurate, context-aware responses. The system is designed for practical use in automated customer service, knowledge management, and education, showcasing how Flask and NLP can be combined for real-world problem-solving.',
     image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['Python', 'Natural Language Tool Kit (NLTK)', 'HTML', 'CSS'],
+    technologies: ['Python', 'Natural Language Tool Kit (NLTK)', 'Flask', 'HTML', 'CSS'],
     github: 'https://github.com/AtharvGangwar48/Suart-Basic',
     demo: 'https://github.com/AtharvGangwar48/Suart-Basic/blob/main/ReasearchPaper.pdf',
   }
