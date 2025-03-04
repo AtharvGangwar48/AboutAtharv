@@ -74,14 +74,6 @@ function Contact() {
               <MessagesSquare className="text-indigo-600 mr-4" size={24} />
               <div>
                 <h3 className="font-semibold text-gray-900">Direct Message</h3>
-                <p className="text-green-600">
-                  <span 
-                    onClick={() => window.open("https://wa.me/919058017153", "_blank")}
-                    className="cursor-pointer"
-                  >
-                    WhatsApp
-                  </span>
-                </p>
                 <p className="text-sky-600">
                   <span 
                     onClick={() => window.open("https://t.me/Atharv48", "_blank")}
