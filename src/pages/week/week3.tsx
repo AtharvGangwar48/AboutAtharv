@@ -35,7 +35,11 @@ function Week3() {
         <h2 className="text-xl font-bold text-gray-900 mb-4">
           Presentation Slides:
         </h2>
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS2x2bpoAm3EwMjdPjW3HYYL39r3wGwlkPcAYco47140OX8JpXprhLH_AqUSkinkg/embed?start=false&loop=false&delayms=3000" width="780" height="300"></iframe>
+        <iframe 
+          className="w-full h-64 sm:h-80 rounded-lg shadow-md"
+          src="https://docs.google.com/presentation/d/e/2PACX-1vS2x2bpoAm3EwMjdPjW3HYYL39r3wGwlkPcAYco47140OX8JpXprhLH_AqUSkinkg/embed?start=false&loop=false&delayms=3000" 
+          allowFullScreen
+        ></iframe>
         <p className="mt-4 text-indigo-600 text-center">
           <a 
             href="https://docs.google.com/presentation/d/1dDOPpNwo0Qq3pyQ8Oayu8I4XzZU7GLZi/edit?usp=sharing&ouid=116156010022272725855&rtpof=true&sd=true" 
@@ -48,6 +52,7 @@ function Week3() {
         </p>
       </div>
 
+      {/* Activity Participation Section */}
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
           We participated in an activity where we had to:
@@ -59,6 +64,7 @@ function Week3() {
         </ul>
       </div>
 
+      {/* Key Points Section */}
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
           Key points:
@@ -70,6 +76,7 @@ function Week3() {
         </ul>
       </div>
 
+      {/* Key Takeaways Section */}
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
           Key Takeaways:
