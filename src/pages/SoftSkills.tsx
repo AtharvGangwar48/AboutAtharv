@@ -22,6 +22,18 @@ function SoftSkills() {
       description:
         "We participated in an activity where we had to collaboratively form a team, strategize, and present a product to an audience within a 20-minute timeframe.",
     },
+    {
+      week: 4,
+      title: "Week 4: E-mail Writing Skills",
+      description:
+        "We participated in an activity where we were given samples of poorly written emails and had to rewrite them without any mistakes.",
+    },
+    {
+      week: 5,
+      title: "Week 5: Mini Film Festival",
+      description:
+        "A list of 10 movies was provided, and we had to select one and answer a set of given questions based on that movie.",
+    },
   ];
 
   return (
