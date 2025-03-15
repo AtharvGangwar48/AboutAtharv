@@ -8,7 +8,7 @@ function Navbar() {
   const location = useLocation();
 
   const isActive = (path: string) => location.pathname === path;
-  const weeks = Array.from({ length: 3 }, (_, i) => i + 1);
+  const weeks = Array.from({ length: 5 }, (_, i) => i + 1);
 
   return (
     <nav className="bg-white shadow-lg">
