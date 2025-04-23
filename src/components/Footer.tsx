@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Unlink } from 'lucide-react';
 
 function Footer() {
   return (
@@ -6,6 +6,14 @@ function Footer() {
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-4">
           <div className="flex space-x-6">
+            <a
+              href="https://linktr.ee/AtharvGangwar48"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              <Unlink size={24} />
+            </a>
             <a
               href="https://github.com/AtharvGangwar48"
               target="_blank"
