@@ -6,13 +6,13 @@ function SoftSkills() {
   const weekData = [
     {
       week: 1,
-      title: "Week 1: Introduction Video",
+      title: "Week 1: Introduction Video & Activity",
       description:
-        "It was an introductory session on career skills, where we were guided on how to present a professional self-introduction.",
+        "It was an introductory session on career skills, where we were guided on how to present a professional self-introduction along with a activity about working of lest and right brain.",
     },
     {
       week: 2,
-      title: "Week 2: Answering Some Interview Questions",
+      title: "Week 2: Profile sheet Interview Questions",
       description:
         "In the session, we learned how to effectively respond to key questions commonly asked in placement interviews.",
     },
@@ -24,7 +24,7 @@ function SoftSkills() {
     },
     {
       week: 4,
-      title: "Week 4: E-mail Writing Skills",
+      title: "Week 4: Writing Skills & E-mail Writing Skills",
       description:
         "We participated in an activity where we were given samples of poorly written emails and had to rewrite them without any mistakes.",
     },
@@ -33,6 +33,12 @@ function SoftSkills() {
       title: "Week 5: Mini Film Festival",
       description:
         "A list of 10 movies was provided, and we had to select one and answer a set of given questions based on that movie.",
+    },
+    {
+      week: 6,
+      title: "Week 6: Group Discussion",
+      description:
+        "Understanding the Do's & Don'ts of a GD and the importance of effective communication in a group setting. We also discussed different types of GD's and Idea Generation techniques.",
     },
   ];
 
