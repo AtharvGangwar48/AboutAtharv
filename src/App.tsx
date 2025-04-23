@@ -12,6 +12,7 @@ import SoftSkillsWeek2 from './pages/week/week2';
 import SoftSkillsWeek3 from './pages/week/week3';
 import SoftSkillsWeek4 from './pages/week/week4';
 import SoftSkillsWeek5 from './pages/week/week5';
+import SoftSkillsWeek6 from './pages/week/week6';
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/softskills/week3" element={<SoftSkillsWeek3 />} />
             <Route path="/softskills/week4" element={<SoftSkillsWeek4 />} />
             <Route path="/softskills/week5" element={<SoftSkillsWeek5 />} />
+            <Route path="/softskills/week6" element={<SoftSkillsWeek6 />} />
             <Route path="/softskills/week:weekNumber" element={<SoftSkillsWeek />} />
             <Route path="*" element={<h1 className='text-center mt-10 text-xl'>Page Not Found</h1>} />
           </Routes>
