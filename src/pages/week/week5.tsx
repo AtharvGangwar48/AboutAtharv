@@ -12,7 +12,7 @@ function Week5() {
         <div className="mt-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">The Pursuit of Happyness</h2>
           <img 
-            src="https://media.licdn.com/dms/image/v2/C5612AQFrZ_i1s8wfcw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1520240502700?e=1746662400&v=beta&t=e0i4Q3O1CU5xrB5BHDzQ-mGtsUILVJwN0-GordfFwxo" 
+            src="https://escapeartists.com/wp-content/uploads/2014/03/thepursuitofhappyness_landscape1-1024x576.jpg" 
             alt="Movie poster of The Pursuit of Happyness" 
             className="w-full max-w-md mx-auto rounded-lg shadow-md mb-4" 
           />
