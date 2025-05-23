@@ -50,7 +50,14 @@ const certificates = [
     date: "2024",
     credentialUrl: "https://www.apnacollege.in/certificate_v2/65f5884f347fff4fbf00b319/user/65390eeb7f0cfa5cea04ce23",
     image: "https://media.geeksforgeeks.org/wp-content/uploads/20231110115359/Roadmap-to-Mern-stack-developer-copy-(3).webp"
-  }
+  },
+  {
+    name: "Blockchain and its Applications",
+    issuer: "IIT Kharagpur (via NPTEL)",
+    date: "2025",
+    credentialUrl: "https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/106/noc25-cs08/Course/NPTEL25CS08S54200000204210581.pdf",
+    image: "https://media.licdn.com/dms/image/v2/D5612AQFsQn59kCIxng/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1714119741952?e=2147483647&v=beta&t=oenSgSdTHPiJsmu4Hhe1tKpt1jEwdSHTs_iwfiC-Bsc"
+  },
 ];
 
 function SkillBar({ name, level }) {
