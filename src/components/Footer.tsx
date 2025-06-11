@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail, Unlink } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Twitter, Unlink } from 'lucide-react';
 
 function Footer() {
   return (
@@ -35,6 +35,14 @@ function Footer() {
               className="text-gray-600 hover:text-indigo-600 transition-colors"
             >
               <Mail size={24} />
+            </a>
+            <a
+              href="https://x.com/Atharv_48" // Assuming this is your Twitter handle
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              <Twitter size={24} />
             </a>
             <a
               href="https://www.instagram.com/neonnirvana.9_11/"
