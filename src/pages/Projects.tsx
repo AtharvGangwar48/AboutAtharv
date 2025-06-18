@@ -3,6 +3,30 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
+    title: 'AI Content Detector',
+    description: 'Our AI Content Detector prototype uses a hybrid algorithm of Hashing, Trie, Heap, and Dynamic Programming (Edit Distance). It analyzes smaller datasets, accurately identifying AI-generated content through multiple algorithmic signals. API detects AI-generated content from JSON-formatted text input. It analyzes the text using its algorithm and returns a structured response with an AI-generation verdict and a confidence score.',
+    image: 'https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg',
+    technologies: ['Python', 'DSA', 'DAA', 'NLP', 'React', 'Typescript'],
+    github: 'https://github.com/AtharvGangwar48/AI_Content_Detector_Backend',
+    demo: 'https://ai-generated-content-eta.vercel.app/',
+  },
+  {
+    title: 'Smart Data Preprocessor',
+    description: 'A java based web application that stores data in MongoDB database after preprocessing your data(As per your requirements). We successfully implemented the file upload feature, allowing users to upload CSV files for preprocessing. The parsing and data cleaning processes were developed, ensuring that users can effectively prepare their data for analysis.',
+    image: 'https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg',
+    technologies: ['JAVA', 'SpringBoot', 'JavaFX', 'Apache Commons CSV', 'HTML', 'MongoDB'],
+    github: 'https://github.com/AtharvGangwar48/Smart_Preprocessor',
+    demo: 'https://github.com/AtharvGangwar48/Smart_Preprocessor/blob/main/README.md',
+  },
+  {
+    title: 'SUART : Question-Answering System works NLP and TF-IDF Similarity',
+    description: 'This project develops a Flask-based question-answering system using Natural Language Processing (NLP) to generate intelligent responses. By applying techniques like tokenization, lemmatization, and vectorization, the system processes user queries and compares them with a preloaded text corpus. It uses TF-IDF and cosine similarity to identify relevant answers, providing accurate, context-aware responses. The system is designed for practical use in automated customer service, knowledge management, and education, showcasing how Flask and NLP can be combined for real-world problem-solving.',
+    image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    technologies: ['Python', 'Natural Language Tool Kit (NLTK)', 'HTML', 'CSS'],
+    github: 'https://github.com/AtharvGangwar48/Suart-Basic',
+    demo: 'https://github.com/AtharvGangwar48/Suart-Basic/blob/main/ReasearchPaper.pdf',
+  },
+  {
     title: 'BookIT-by-atharv',
     description: 'This project is a custom-built Airbnb clone, developed to showcase my web development skills. The backend is powered by MongoDB, Express, and Node.js, with version control managed through Git and GitHub. I deployed the application on Render, ensuring all APIs follow RESTful principles and support full CRUD functionality. The project is structured using the MVC (Model-View-Controller) design pattern for organized and maintainable code.',
     image: 'https://images.pexels.com/photos/5077042/pexels-photo-5077042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -18,14 +42,6 @@ const projects = [
     github: 'https://github.com/AtharvGangwar48/RicoTrade-Frontend',
     demo: 'https://ricotrade.onrender.com/',
   },
-  {
-    title: 'SUART : Question-Answering System works NLP and TF-IDF Similarity',
-    description: 'This project develops a Flask-based question-answering system using Natural Language Processing (NLP) to generate intelligent responses. By applying techniques like tokenization, lemmatization, and vectorization, the system processes user queries and compares them with a preloaded text corpus. It uses TF-IDF and cosine similarity to identify relevant answers, providing accurate, context-aware responses. The system is designed for practical use in automated customer service, knowledge management, and education, showcasing how Flask and NLP can be combined for real-world problem-solving.',
-    image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    technologies: ['Python', 'Natural Language Tool Kit (NLTK)', 'Flask', 'HTML', 'CSS'],
-    github: 'https://github.com/AtharvGangwar48/Suart-Basic',
-    demo: 'https://github.com/AtharvGangwar48/Suart-Basic/blob/main/ReasearchPaper.pdf',
-  }
 ];
 
 function Projects() {
