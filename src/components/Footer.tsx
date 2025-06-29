@@ -31,6 +31,14 @@ function Footer() {
               <Linkedin size={24} />
             </a>
             <a
+              href="https://unstop.com/u/athargan40228" // Replace with your actual Unstop link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              <Unlink size={24} />
+            </a>
+            <a
               href="mailto:atharvgangwar8@gmail.com"
               className="text-gray-600 hover:text-indigo-600 transition-colors"
             >
