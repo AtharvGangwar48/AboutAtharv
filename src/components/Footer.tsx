@@ -55,7 +55,7 @@ function Footer() {
               <Twitter size={24} />
             </a>
             <a
-              href="https://www.instagram.com/neonnirvana.9_11/"
+              href="https://www.instagram.com/nirvana.9_11/"
               className="text-gray-600 hover:text-indigo-600 transition-colors"
             >
               <Instagram size={24} />
