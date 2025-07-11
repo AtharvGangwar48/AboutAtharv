@@ -37,7 +37,7 @@ function Footer() {
               className="text-gray-600 hover:text-indigo-600 transition-colors"
             >
               <div className="w-6 h-6 bg-gray-300 flex justify-center items-center rounded-full text-white font-bold">
-                U
+                Un
               </div>
             </a>
             <a
